@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+	--Cyan: hsl(179, 62%, 43%);
+	--Bright-Yellow: hsl(71, 73%, 54%);
+	--Light-Gray: hsl(204, 43%, 93%);
+	--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Karla", sans-serif;
+	font-size: 16px;
+	background-color: var(--Light-Gray);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.container {
+	padding: 25px 20px;
+}
+
+.first {
+	background-color: white;
+	border-radius: 5px 5px 0 0;
+}
+
+.first h1 {
+	color: var(--Cyan);
+	font-size: 17px;
+	margin-bottom: 25px;
+	font-weight: 700;
+}
+
+.first h3 {
+	font-size: 15px;
+	margin-bottom: 20px;
+	color: var(--Bright-Yellow);
+	font-weight: 700;
+}
+
+.first p {
+	font-size: 12px;
+	line-height: 1.6;
+	color: var(--Grayish-Blue);
+}
+
+.second {
+	background-color: var(--Cyan);
+	color: var(--Light-Gray);
+}
+
+.second h1 {
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+
+.second div {
+	font-size: 13px;
+	align-content: center;
+	font-weight: 400;
+	margin-bottom: 5px;
+	color: var(--Light-Gray);
+}
+
+.second div span {
+	font-size: 26px;
+	font-weight: 700;
+	padding-right: 5px;
+	vertical-align: middle;
+	opacity: 1 !important;
+	color: white;
+}
+
+.second p {
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+button {
+	width: 100%;
+	padding: 10px 50px;
+	background-color: var(--Bright-Yellow);
+	color: var(--Light-Gray);
+	font-weight: 700;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 5px 20px rgb(10 13 57 / 15%);
+}
+
+button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.third {
+	background-color: var(--Cyan);
+	opacity: 0.8;
+	color: var(--Light-Gray);
+	border-radius: 0 0 5px 5px;
+}
+
+.third h1 {
+	font-size: 15px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+li {
+	list-style: none;
+	font-size: 12px;
+	opacity: 0.9;
+	line-height: 1.5;
+}
+
+@media (min-width: 600px) {
+	main {
+		max-width: 575px;
+	}
+
+	.container {
+		padding: 30px;
+	}
+
+	.first p {
+		width: 80%;
+	}
+
+	.bottom {
+		display: flex;
+		max-width: 100%;
+	}
+
+	.second,
+	.third {
+		width: 50%;
+	}
+}
